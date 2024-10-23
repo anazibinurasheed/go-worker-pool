@@ -33,4 +33,11 @@ func main() {
 	for a := 1; a <= numJobs; a++ {
 		<-results
 	}
+
+	Error()
+}
+
+
+func Error()error{
+	return nil
 }
