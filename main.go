@@ -13,6 +13,8 @@ func worker(id int, jobs <-chan int, results chan<- int) {
 		results <- j * 2
 
 	}
+
+
 }
 
 func main() {
