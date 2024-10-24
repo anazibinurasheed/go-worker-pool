@@ -13,6 +13,8 @@ func worker(id int, jobs <-chan int, results chan<- int) {
 		results <- j * 2
 
 	}
+
+
 }
 
 func main() {
@@ -33,4 +35,11 @@ func main() {
 	for a := 1; a <= numJobs; a++ {
 		<-results
 	}
+
+	Error()
+}
+
+
+func Error()error{
+	return nil
 }
